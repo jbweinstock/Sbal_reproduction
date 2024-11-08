@@ -8,7 +8,7 @@ Sbal_reproduction has the following directory trees below it.
 - **data:** [~weekly reproductive proportion data (.csv)], [hourly intertidal/subtidal temperature logger data for Newagen 2003], and folder **NOAH_filt_temps** for [filtered temperatures]
 - **NOAH_IntertidalModel:** see below
 
-Weekly reproductive proportion data, Newagen 2003 hourly temperature logger data, and filtered intertidal temperatures can be downloaded from: 
+Weekly reproductive proportion data, Newagen 2003 hourly temperature logger data, and filtered intertidal temperatures can be downloaded from: [URL coming soon]
 
 
 ## Sbal_reproduction/scripts
@@ -30,17 +30,16 @@ Code dependencies are *italicized*
 ## Noah Intertidal Temperature Model code
 
 NOAH_IntertidalModel has the following directory trees below it. I recommend keeping this overall tree structure.
-- **MetData:** North American Regional Reanalysis data for 2000
-- **NOAH_LSM:** Source code for NOAH intertidal model
-- **NOAH_R_Code_2:** R code [and NOAH windows pc executable (nt191.exe)]
-- **SST:** OSTIA reprocessed SST subset for Northeast US/Canada coast for 2000
-- **tide:** [xtide.exe windows pc executable] and harmonics files
+- **MetData:** location for [North American Regional Reanalysis (NARR) data]
+- **NOAH_R_Code_2:** R code, template files, and [NOAH windows pc executable (nt191.exe)]
+- **SST:** Location for [OSTIA SST data]
+- **tide:** [xtide.exe windows pc executable] and [harmonics files]
 
 The R programs need to be edited to indicate where data and programs reside
 
 You can get updated harmonics from https://flaterco.com/files/xtide/harmonics-dwf-20240104-free.tar.xz  
 Source code is here https://flaterco.com/files/xtide/xtide-2.15.5.tar.xz  
-You will need to create an environment variable HFILE_PATH that should have the path to the harmonics directory that is in the tide folder. PDF instructions for ways to do this are included in the toplevel directory.
+You will need to create an environment variable HFILE_PATH that should have the path to the harmonics directory that is in the tide folder. 
 
 The intertidal temperature model (NOAH) is in NOAH_LSM
 The source code is NoahTest_v1.91.f (in NOAH_LSM)
