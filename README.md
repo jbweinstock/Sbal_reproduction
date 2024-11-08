@@ -32,13 +32,22 @@ OSTIA near real time data (after 2022-06-01) were obtained from https://data.mar
 
 The MaxPlanck Institute for Meteorology tools CDO were used to aggregate the data into 1 year files, subsetted into the region of lons -74 to -59 and lats 40 to 47, using this linux script:
 
+
+
 #-------------------------------------------
+
 #!/bin/sh
+
 STARNC="*.nc"
+
 for Y in $(seq 2005 2022);do
+
 #Y=2000
+
 cdo -f nc4 -z zip_3 cat -apply,-sellonlatbox,-74,-59,40,47 [ /mnt/p/SST/OSTIA-NRT/$Y/$STARNC ] /mnt/p/SST/OSTIANRT/
+
 OSTIA_US_NEast_$Y.nc
+
 done
 
 #------------------------------------------
