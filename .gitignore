@@ -6,3 +6,6 @@ data/NOAH_filt_temps/*.csv
 data/*.csv
 NOAH_IntertidalModel/NOAH_LSM/*.exe
 NOAH_IntertidalModel/NOAH_R_Code_2/*.exe
+NOAH_IntertidalModel/NOAH_R_Code_2/TestResults-20240307
+NOAH_IntertidalModel/NOAH_R_Code_2/model_plots
+NOAH_IntertidalModel/NOAH_R_Code_2/model_output
