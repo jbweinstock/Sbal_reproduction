@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+data/NOAH_filt_temps/*.csv
+data/*.csv
+NOAH_IntertidalModel/NOAH_LSM/*.exe
+NOAH_IntertidalModel/NOAH_R_Code_2/*.exe
