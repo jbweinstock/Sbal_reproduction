@@ -5,7 +5,7 @@ NOTE: Any files/programs contained in [brackets] must be downloaded separately f
 
 Sbal_reproduction has the following directory trees below it.
 - **scripts:** R and MATLAB scripts for processing phenology data and intertidal temperatures, see below
-- **data:** [~weekly reproductive proportion data], [hourly intertidal/subtidal temperature logger data for Newagen 2003], and folder **NOAH_filt_temps** for [filtered temperatures]
+- **data:** [~weekly reproductive proportion data], [hourly intertidal/subtidal temperature logger data for Newagen 2003], [site meta-data],and folder **NOAH_filt_temps** for [filtered temperatures]. Note that data must be downloaded from https://doi.org/10.5061/dryad.gxd2547wk and inserted into this file structure.
 - **NOAH_IntertidalModel:** see below
 
 
@@ -27,9 +27,11 @@ Code dependencies are *italicized*
 
 ## Noah Intertidal Temperature Model code
 
-NOAH_IntertidalModel has the following directory trees below it. I recommend keeping this overall tree structure.
+NOAH_IntertidalModel has the following directory trees below it. It is recommend to keep this overall tree structure.
 - **MetData:** location for [North American Regional Reanalysis (NARR) data]
 - **NOAH_R_Code_2:** R code, template files, and [NOAH windows pc executable (nt191.exe)]
+
+The following folders are also necessary, located within the NOAH_IntertidalModel folder. These folders with example data can be downloaded from https://doi.org/10.5061/dryad.gxd2547wk
 - **SST:** Location for [OSTIA SST data]
 - **tide:** [xtide.exe windows pc executable] and [harmonics files]
 
@@ -67,5 +69,5 @@ done
 
 ## Data download
 
-Weekly reproductive proportion data, Newagen 2003 hourly temperature logger data, filtered intertidal temperatures, and site metadata can be downloaded from: [URL coming soon]. This URL also includes example data files for NARR and OSTIA data products and XTide harmonics files.
+Weekly reproductive proportion data, Newagen 2003 hourly temperature logger data, filtered intertidal temperatures, and site metadata can be downloaded from: https://doi.org/10.5061/dryad.gxd2547wk. This URL also includes example data files for NARR and OSTIA data products and XTide harmonics files.
 
