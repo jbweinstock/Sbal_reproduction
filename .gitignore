@@ -4,10 +4,15 @@
 .Ruserdata
 data/NOAH_filt_temps/*.csv
 data/*.csv
-NOAH_IntertidalModel/NOAH_LSM
+NOAH_IntertidalModel/NOAH_LSM/
 NOAH_IntertidalModel/NOAH_R_Code_2/*.exe
 NOAH_IntertidalModel/NOAH_R_Code_2/TestResults-20240307
 NOAH_IntertidalModel/NOAH_R_Code_2/model_plots
 NOAH_IntertidalModel/NOAH_R_Code_2/model_output
 NOAH_IntertidalModel/MetData/*.pdf
 NOAH_IntertidalModel/tide/*.exe
+NOAH_IntertidalModel/tide/harmonics/
+NOAH_IntertidalModel/tide/consituents_from_rocky/
+NOAH_IntertidalModel/MetData/NARR/
+NOAH_IntertidalModel/SST/OSTIA/*nc
+NOAH_IntertidalModel/How_to_set_new_env_var_Windows.pdf
