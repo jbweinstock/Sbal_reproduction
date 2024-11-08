@@ -5,10 +5,8 @@ NOTE: Any files/programs contained in [brackets] must be downloaded separately f
 
 Sbal_reproduction has the following directory trees below it.
 - **scripts:** R and MATLAB scripts for processing phenology data and intertidal temperatures, see below
-- **data:** [~weekly reproductive proportion data (.csv)], [hourly intertidal/subtidal temperature logger data for Newagen 2003], and folder **NOAH_filt_temps** for [filtered temperatures]
+- **data:** [~weekly reproductive proportion data], [hourly intertidal/subtidal temperature logger data for Newagen 2003], and folder **NOAH_filt_temps** for [filtered temperatures]
 - **NOAH_IntertidalModel:** see below
-
-Weekly reproductive proportion data, Newagen 2003 hourly temperature logger data, and filtered intertidal temperatures can be downloaded from: [URL coming soon]
 
 
 ## Sbal_reproduction/scripts
@@ -41,9 +39,9 @@ You can get updated harmonics from https://flaterco.com/files/xtide/harmonics-dw
 Source code is here https://flaterco.com/files/xtide/xtide-2.15.5.tar.xz  
 You will need to create an environment variable HFILE_PATH that should have the path to the harmonics directory that is in the tide folder. 
 
-The intertidal temperature model (NOAH) is in NOAH_LSM
-The source code is NoahTest_v1.91.f (in NOAH_LSM)
-If you want to run it on a Mac or Linux box, you will need to compile the source code with a fortran compiler like gfortran.
+The Noah Land Surface Temperature model software is available for download from https://ral.ucar.edu/model/unified-noah-lsm.
+This study used NoahTest_v1.91
+If you want to run the model on a Mac or Linux box, you will need to compile the source code with a fortran compiler like gfortran.
 
 The MetData directory includes only data for the year 2000. You can download other years
 from https://downloads.psl.noaa.gov/Datasets/NARR/monolevel/
@@ -66,4 +64,8 @@ OSTIA_US_NEast_$Y.nc
 done
 #------------------------------------------
 ```
+
+## Data download
+
+Weekly reproductive proportion data, Newagen 2003 hourly temperature logger data, filtered intertidal temperatures, and site metadata can be downloaded from: [URL coming soon]. This URL also includes example data files for NARR and OSTIA data products and XTide harmonics files.
 
