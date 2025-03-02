@@ -1,5 +1,5 @@
 # Sbal_reproduction
-**Code for paper: Latitudinal differences in embryonic development mediate the seasonal timing of larval release**
+**Code for paper: Latitudinal variation in seasonal cycle mediates population differences in barnacle reproduction phenology**
 
 NOTE: Any files/programs contained in [brackets] must be downloaded separately from links provided
 
