@@ -1,6 +1,6 @@
 %% Filtering NOAH intertidal temperatures
 % Date created: 05.15.24
-% Date updated: 11.07.24
+% Date updated: 01.05.26
 
 clear
 clc
@@ -25,8 +25,11 @@ end
 
 %% Process hourly logger data, for Supp. figure
 
-filepath3 = '[CODEPATH HERE]\Sbal_reproduction\data\';
-filepath4 = '[CODEPATH HERE]\Sbal_reproduction\data\NOAH_filt_temps';
+%filepath3 = '[CODEPATH HERE]\Sbal_reproduction\data\';
+%filepath4 = '[CODEPATH HERE]\Sbal_reproduction\data\NOAH_filt_temps';
+
+filepath3 = 'C:\Users\Jane\Desktop\Macbook\WHOI\Research\NE_Data\semibalanus_phenology\R\water_temps\';
+filepath4 = 'C:\Users\Jane\Desktop\Macbook\WHOI\Research\NE_Data\nearshore-temps\filt_NOAH_temps\';
 
 interT = readtable(fullfile(filepath3,'temps_Nw_int.csv')); %load data
 subT = readtable(fullfile(filepath3,'temps_Nw_sub.csv')); %load data
