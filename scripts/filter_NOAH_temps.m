@@ -1,6 +1,6 @@
 %% Filtering NOAH intertidal temperatures
 % Date created: 05.15.24
-% Date updated: 01.05.26
+% Date updated: 01.14.26
 
 clear
 clc
@@ -25,11 +25,8 @@ end
 
 %% Process hourly logger data, for Supp. figure
 
-%filepath3 = '[CODEPATH HERE]\Sbal_reproduction\data\';
-%filepath4 = '[CODEPATH HERE]\Sbal_reproduction\data\NOAH_filt_temps';
-
-filepath3 = 'C:\Users\Jane\Desktop\Macbook\WHOI\Research\NE_Data\semibalanus_phenology\R\water_temps\';
-filepath4 = 'C:\Users\Jane\Desktop\Macbook\WHOI\Research\NE_Data\nearshore-temps\filt_NOAH_temps\';
+filepath3 = '[CODEPATH HERE]\Sbal_reproduction\data\';
+filepath4 = '[CODEPATH HERE]\Sbal_reproduction\data\NOAH_filt_temps';
 
 interT = readtable(fullfile(filepath3,'temps_Nw_int.csv')); %load data
 subT = readtable(fullfile(filepath3,'temps_Nw_sub.csv')); %load data
@@ -42,3 +39,42 @@ sub_filtT = pl64t(subT.tempC); %apply filter, using default 33 hr cutoff
 subT2 = [subT table(sub_filtT, 'VariableNames', {'filtT'})]; %combine filtered temps to data
 writetable(subT2,fullfile(filepath4, 'temps_Nw_sub_filt.csv')); %export
 
+%% Process hourly logger data, for figure
+
+% Newagen 2003
+interT = readtable('R\water_temps\temps_Nw_int.csv'); %load data
+subT = readtable('R\water_temps\temps_Nw_sub.csv'); %load data
+
+filtT = pl64t(interT.tempC); %apply filter, using default 33 hr cutoff
+interT2 = [interT table(filtT, 'VariableNames', {'filtT'})]; %combine filtered temps to data
+writetable(interT2,fullfile(filepath4, 'temps_Nw_int_filt.csv')); %export
+
+sub_filtT = pl64t(subT.tempC); %apply filter, using default 33 hr cutoff
+subT2 = [subT table(sub_filtT, 'VariableNames', {'filtT'})]; %combine filtered temps to data
+writetable(subT2,fullfile(filepath4, 'temps_Nw_sub_filt.csv')); %export
+
+
+%% Process hourly logger data, for quantitative comparison with model
+
+% Halifax 2003
+interT_Hal = readtable('R\water_temps\temps_Hal_int.csv'); %load data
+
+filtT = pl64t(interT_Hal.temp_C); %apply filter, using default 33 hr cutoff
+interT2 = [interT_Hal table(filtT, 'VariableNames', {'filtT'})]; %combine filtered temps to data
+writetable(interT2,fullfile(filepath4, 'temps_Hal_int_filt.csv')); %export
+
+
+% Park St 2004
+interT_PS04 = readtable('R\water_temps\temps_PS04_int.csv'); %load data
+
+filtT = pl64t(interT_PS04.temp_C); %apply filter, using default 33 hr cutoff
+interT2 = [interT_PS04 table(filtT, 'VariableNames', {'filtT'})]; %combine filtered temps to data
+writetable(interT2,fullfile(filepath4, 'temps_PS04_int_filt.csv')); %export
+
+
+% Park St 2022
+interT_PS22 = readtable('R\water_temps\temps_PS22_int.csv'); %load data
+
+filtT = pl64t(interT_PS22.temp_C); %apply filter, using default 33 hr cutoff
+interT2 = [interT_PS22 table(filtT, 'VariableNames', {'filtT'})]; %combine filtered temps to data
+writetable(interT2,fullfile(filepath4, 'temps_PS22_int_filt.csv')); %export
